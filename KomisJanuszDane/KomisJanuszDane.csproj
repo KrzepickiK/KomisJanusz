@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\AppData.cs" />
     <Compile Include="Pojazd.cs" />
     <Compile Include="Pojazdy\Samochod.cs" />
     <Compile Include="Pojazdy\Samochody\Fiat.cs" />

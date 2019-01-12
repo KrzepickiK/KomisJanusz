@@ -73,7 +73,7 @@ namespace KomisJanusz
 
                 if (Dialog.CzyZalogowany)
                 {
-                    Okno.Run(); 
+                    Okno.Run();
                 }
                 else
                 {
@@ -150,10 +150,28 @@ namespace KomisJanusz
             if (sender.Login.Equals("admin") && (sender.Password.Equals(MagicNumber) || sender.Password.Equals("test")))
             {
                 return true;
+            }else if(sender.Login.Equals("Janusz") && (sender.Password.Equals("Cebula1"))){
+                return true;
             }
 
             return false;
         }
 
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void JanuszBtn_Click(object sender, RoutedEventArgs e)
+        {
+            PanelJanusza panel = new PanelJanusza();
+            panel.Show();
+        }
+
+        private void BtnPojazdyWKomisie_Click(object sender, RoutedEventArgs e)
+        {
+            WindowPojazdyWKomisie pojazdyWKomisie = new WindowPojazdyWKomisie();
+            pojazdyWKomisie.Show();
+        }
     }
 }

@@ -139,5 +139,15 @@ namespace KomisJanusz.Komponenty
                 instancja.LoginField.Focus();
             }
         }
+
+        private void LoginField_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void LoginBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

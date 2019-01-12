@@ -61,12 +61,26 @@
     <Compile Include="Komponenty\DialogLogowania.xaml.cs">
       <DependentUpon>DialogLogowania.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Komponenty\PanelJanusza.xaml.cs">
+      <DependentUpon>PanelJanusza.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Komponenty\WindowPojazdyWKomisie.xaml.cs">
+      <DependentUpon>WindowPojazdyWKomisie.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Zasoby.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Zasoby.resx</DependentUpon>
     </Compile>
     <Page Include="Komponenty\DialogLogowania.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Komponenty\PanelJanusza.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Komponenty\WindowPojazdyWKomisie.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -127,6 +141,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Dokumentacja\1_Wprowadzenie\programowanie-obiektowe-WPF.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\CenaDoUstalenia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\panel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Info_Tag.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

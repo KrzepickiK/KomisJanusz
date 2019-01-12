@@ -20,7 +20,7 @@
             </Grid.RowDefinitions>
 
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-                <Button x:Name="LoginBtn" Margin="5" Padding="3" MinWidth="80">Loguj</Button>
+                <Button x:Name="LoginBtn" Margin="5" Padding="3" MinWidth="80" Click="LoginBtn_Click">Loguj</Button>
                 <Button x:Name="CancelBtn" Margin="5" Padding="3" MinWidth="80">Anuluj</Button>
             </StackPanel>
 
@@ -38,7 +38,7 @@
                     <Label Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">Login</Label>
                     <Label Grid.Column="0" Grid.Row="1" VerticalAlignment="Center">Hasło</Label>
 
-                    <TextBox x:Name="LoginField" Grid.Column="1" Grid.Row="0" MaxLength="20" Width="140" Margin="5" VerticalContentAlignment="Center" />
+                    <TextBox x:Name="LoginField" Grid.Column="1" Grid.Row="0" MaxLength="20" Width="140" Margin="5" VerticalContentAlignment="Center" TextChanged="LoginField_TextChanged" />
                     <PasswordBox x:Name="PasswordField" Grid.Column="1" Grid.Row="1" Width="140" PasswordChar="*" Margin="5" VerticalContentAlignment="Center"/>
 
                 </Grid>
